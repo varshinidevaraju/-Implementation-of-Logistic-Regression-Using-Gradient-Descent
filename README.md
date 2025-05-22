@@ -112,7 +112,7 @@ print(y_prednew)
 
 ## Output:
 
-![image](https://github.com/user-attachments/assets/a00d45b6-e31a-4735-89a6-3b6efb84ec06)
+![image](https://github.com/user-attachments/assets/7f3f3f0c-82ec-4f5b-b2e1-6844d4c87c6c)
 ![image](https://github.com/user-attachments/assets/85c1182f-c710-4d1a-89fa-4e656e54c490)
 ![image](https://github.com/user-attachments/assets/21a38af0-d4ca-4e6f-aeff-84e1228cdea6)
 ![image](https://github.com/user-attachments/assets/2fbac6e4-833f-48cf-b34d-02cb03334c27)
