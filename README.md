@@ -2,9 +2,10 @@
 
 ## AIM:
 To write a program to implement the the Logistic Regression Using Gradient Descent.
- 
+ ```
 Developed by: Varshini D
 RegisterNumber:  212223230234
+```
 
 ## Equipments Required:
 1. Hardware – PCs
