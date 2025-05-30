@@ -11,6 +11,7 @@ RegisterNumber:  212223230234
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
+```
 1.Import the required libraries.
 
 2.Load the dataset.
@@ -22,9 +23,9 @@ RegisterNumber:  212223230234
 5.Define a function to plot the decision boundary. 
 
 6.Define a function to predict the Regression value.
-
+```
 ## Program:
-
+```
 
 import pandas as pd
 import numpy as np
@@ -32,10 +33,10 @@ import matplotlib.pyplot as plt
 
 dataset=pd.read_csv("C:/Users/admin/Downloads/Placement_Data.csv")
 dataset
-
+```
 ## Output:
 ![image](https://github.com/user-attachments/assets/13598c70-0ee8-46e2-9487-36b8a3ec9747)
-
+```
 dataset=dataset.drop('sl_no',axis=1)
 dataset=dataset.drop('salary',axis=1)
 
@@ -61,15 +62,15 @@ dataset["status"]=dataset["status"].cat.codes
 dataset["hsc_s"]=dataset["hsc_s"].cat.codes
 
 dataset
-
+```
 ![image](https://github.com/user-attachments/assets/9bea160c-8de2-4cf2-a0f2-12613af451f4)
-
+```
 X=dataset.iloc[:,:-1].values
 Y=dataset.iloc[:,-1].values
 Y
-
+```
 ![image](https://github.com/user-attachments/assets/769482d6-298e-433d-b0ab-62f67f1b46a6)
-
+```
 theta=np.random.randn(X.shape[1])
 y=Y
 def sigmoid(z):
@@ -98,27 +99,27 @@ y_pred=predict(theta,X)
 
 accuracy=np.mean(y_pred.flatten()==y)
 print("Accuracy:",accuracy)
-
+```
 ![image](https://github.com/user-attachments/assets/8b571dc1-5ede-47da-9df9-7ac8782cfdb0)
-
+```
 print(y_pred)
-
+```
 ![image](https://github.com/user-attachments/assets/4a33f83b-dd60-4b8f-b984-1f2968540e77)
-
+```
 print(Y)
-
+```
 ![image](https://github.com/user-attachments/assets/63d79797-923c-4242-bf9d-e5ea2b013e2d)
-
+```
 xnew=np.array([[0,87,0,95,0,2,78,2,0,0,1,0]])
 y_prednew=predict(theta,xnew)
 print(y_prednew)
-
+```
 ![image](https://github.com/user-attachments/assets/481a16ab-0007-42cd-b2aa-fbdb9bdb681d)
-
+```
 xnew=np.array([[0,0,0,0,0,2,8,2,0,0,1,0]])
 y_prednew=predict(theta,xnew)
 print(y_prednew)
-
+```
 ![image](https://github.com/user-attachments/assets/24e13c63-7694-43e4-b599-2153d9733e36)
 
 
